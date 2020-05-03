@@ -10,7 +10,11 @@ node {
  stage('Maven-Compile') {
    sh label: '', script: 'mvn compile'
   }
-  
+  stage('Sonar Analysis') {
+   withSonarQubeEnv('Sonar') {
+        sh "mvn sonar:sonar"
+    }
+  }
    stage('Maven-Test') {
    sh label: '', script: 'mvn test'
   }
@@ -18,6 +22,35 @@ node {
    stage('Maven-Package') {
    sh label: '', script: 'mvn package'
 }
+ stage('Jfrog Artifacory Upload') {
+        def server= Artifactory.server 'jFrog'
+                    def uploadSpec= """{
+                        "files": [{
+                        "pattern": "target/*.war",
+                        "target": "maven-repo"}]
+                    }"""
+        server.upload(uploadSpec)
+        
+        }
+        
+        stage("Remove Package") {
+        sh "rm -rf target/"
+        }
+        
+        
+          stage('Download package from JFrog') {
+            def server= Artifactory.server 'jFrog'
+            def downloadSpec = """{
+            "files": [
+            {
+                "pattern": "maven-repo/capstoneproject-0.0.1-SNAPSHOT.war",
+                "target": "./capstoneproject.war"
+            }
+            ]
+            }"""
+        server.download(downloadSpec)
+    }
+       
  stage('Docker-Stage-Deployment') {
    sh label: '', script: 'docker-compose up -d --build'
   }
