@@ -1,0 +1,212 @@
+    1  ls
+    2  git clone https://github.com/SaiCharanUppari/warapp.git
+    3  ls
+    4  git clone https://github.com/RoohinazK/war-app.git
+    5  ls
+    6  cd war-app/
+    7  cp -rf ../warapp/*
+    8  cp -rf ../warapp/.
+    9  cp -rf ../warapp/
+   10  cp -rf ../war/
+   11  ls
+   12  cp -rf ../warapp/warapp/* .
+   13  ls
+   14  git status
+   15  git add .
+   16  git commit -m "First commit"
+   17  git config --global user.email "roohinazk25@gmail.com ; git config --global user.name "RoohinazK"
+   18  exit
+   19  git config --global user.email "roohinazk25@gmail.com" ;git config --global user.name "RoohinazK"
+   20  git commit -m "First Commit"
+   21  git push
+   22  ls
+   23  cd
+   24  apt-get update; apt-get install default-jdk -y
+   25  sudo apt-get update; apt-get install default-jdk -y
+   26  sudo su -
+   27  sudo  wget http://mirrors.jenkins.io/war-stable/latest/jenkins.war
+   28  ls
+   29  mv jenkins.war /root/
+   30  ls
+   31  ls -a
+   32  git status
+   33  cd war-app/
+   34  git status
+   35  /home/roohinazk25/.jenkins/secrets/initialAdminPassword
+   36  sudo lsof -i -P | grep LISTEN
+   37  /home/roohinazk25/.jenkins/secrets/initialAdminPassword
+   38  sudo su -
+   39  ls
+   40  cd war-app/
+   41  ls
+   42  vi jenkinsfile
+   43  ls
+   44  git status
+   45  git add .
+   46  git commit -m "Adding jenkinsfile"
+   47  git push
+   48  git status
+   49  ls
+   50  vi jenkinsfile
+   51  git add .
+   52  git commit -m "jenkinsfile"
+   53  git push
+   54  ls
+   55  git status
+   56  sudo apt install maven
+   57  ls
+   58  mvn -version
+   59  sudo su -
+   60  ls
+   61  cd
+   62  ls
+   63  vi dockerfile
+   64  git status
+   65  ls
+   66  rm dockerfile
+   67  cd war-app/
+   68  ls
+   69  vi dockerfile
+   70  ls
+   71  git status
+   72  git add .
+   73  git commit -m "updated dockerfile"
+   74  git push
+   75  git status
+   76  ls
+   77  vim dockercompose.yaml
+   78  ls
+   79  git add .
+   80  git commit -m "Docker-compose file"
+   81  git push
+   82  ls
+   83  sudo apt-get install docker-compose
+   84  ls
+   85  vi dockerfile
+   86  mvn package
+   87  ls
+   88  cd target/
+   89  ls
+   90  pwd
+   91  docker-compose -f dockercompose.yaml up -d
+   92  cd ..
+   93  ls
+   94  docker-compose -f dockercompose.yaml up -d
+   95  docker service status
+   96  docker service start
+   97  docker service-start
+   98  lsof -i -P |grep LISTEN
+   99  docker ps
+  100  docker images
+  101  sudo docker images
+  102  sudo docker service start
+  103  sudo docker-compose -f dockercompose.yaml up -d
+  104  ls
+  105  vi dockerfile
+  106  git pull
+  107  sudo docker-compose -f dockercompose.yaml up -d
+  108  docker ps
+  109  sudo docker ps
+  110  sudo docker exec -it 0aa34e05c96a bin/bash
+  111  sudo docker exec -it 0aa34e05c96a bash
+  112  java -jar jenkins.war --httpPort=9090&
+  113  docker run --name jfrog -d -p 3060:8081 docker.bintray.io/jfrog/artifactory-oss:6.17.0
+  114  sudo docker run --name jfrog -d -p 3060:8081 docker.bintray.io/jfrog/artifactory-oss:6.17.0
+  115  curl ifconfig.me
+  116  sudo  docker run -d --name sonarqube -p 9000:9000 sonarqube
+  117  docker ps
+  118  sudo docker ps
+  119  sudo docker ps -a
+  120  git pull
+  121  ls
+  122  cd war-app/
+  123  git status
+  124  git add .
+  125  git commit 
+  126  git push
+  127  git pull
+  128  git status
+  129  git commit -m "Committ"
+  130  git push
+  131  git status
+  132  ls
+  133  git pull
+  134  git status
+  135  git pull
+  136  sudo docker images
+  137  docker image
+  138  docker images
+  139  sudo docker images
+  140  sudo docker-compose -f docker-compose.yaml up -d
+  141  sudo docker ps
+  142  sudo docker exec -it 0aa34e05c96a bash
+  143  sudo docker ps 
+  144  sudo docker stop 0aa34e05c96a
+  145  sudo docker rm 0aa34e05c96a
+  146  sudo docker-compose -f docker-compose.yaml up -d
+  147  sudo docker ps
+  148  sudo docker stop 0aa34e05c96a
+  149  sudo docker stop 2a4f160e1530
+  150  sudo docker rm 2a4f160e1530
+  151  sudo docker ps
+  152  docker pull
+  153  git pull
+  154  git statuss
+  155  git status
+  156  docker ps
+  157  sudo docker ps
+  158  cd
+  159  git clone https://github.com/RoohinazK/Ansible.git
+  160  ls
+  161  cd Ansible/
+  162  ls
+  163  vim variables.tf 
+  164  cat variables.tf 
+  165  cd ~/.ssh
+  166  ls
+  167  vim mkey.pem
+  168  cat mkey.pem 
+  169  cd
+  170  ls
+  171  cd Ansible/
+  172  cd
+  173  sudo apt-get install unzip
+  174  sudo wget https://releases.hashicorp.com/terraform/0.12.24/terraform_0.12.24_linux_amd64.zip
+  175  sudo unzip terraform_0.12.24_linux_amd64.zip
+  176  sudo mv terraform /usr/local/bin/
+  177  terraform --version
+  178  ls
+  179  cd Ansible/
+  180  ls
+  181  cat local_exec.tf 
+  182  cd
+  183  sudo  docker run --name jfrog -d -p 3060:8081 docker.bintray.io/jfrog/artifactory-oss:6.17.0
+  184  docker ps
+  185  sudo docker ps
+  186  curl ifconfig.me
+  187  which terraform
+  188  wqswit
+  189  wait
+  190  sudo cp /usr/local/bin/terraform /root/bin/terraform
+  191  ls
+  192  where is that installation file?
+  193  cd Ansible/
+  194  which tels
+  195  ls
+  196  cd
+  197  sudo su -
+  198  cd .jenkins/
+  199  ls
+  200  cd workspace/
+  201  ls
+  202  cd Terraform
+  203  ls
+  204  cat inventory 
+  205  exit
+  206  history
+  207  history > Terraform Installation.txt
+  208  history > Terraform-Installation.txt
+  209  git status
+  210  ls
+  211  cd war-app/
+  212  history > Terraform-Installation.txt
