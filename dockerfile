@@ -4,7 +4,7 @@ RUN echo 'Deploying War on Server'
 
 RUN rm -rf /usr/local/tomcat/webapps/*
 
-COPY ./war-app.war  /usr/local/tomcat/webapps/ROOT.war
+COPY ./target/warapp-0.0.1.war  /usr/local/tomcat/webapps/ROOT.war
 
 EXPOSE 8080
 
