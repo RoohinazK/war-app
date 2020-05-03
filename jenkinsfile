@@ -1,0 +1,20 @@
+node {
+  stage('Git-Checkout') {
+   git 'https://github.com/RoohinazK/war-app.git'
+  }
+
+  stage('Maven-Clean') {
+   sh label: '', script: 'mvn clean'
+  }
+    
+ stage('Maven-Compile') {
+   sh label: '', script: 'mvn compile'
+  }
+  
+   stage('Maven-Test') {
+   sh label: '', script: 'mvn test'
+  }
+  
+   stage('Maven-Package') {
+   sh label: '', script: 'mvn package'
+  }
