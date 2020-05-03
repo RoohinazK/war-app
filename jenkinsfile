@@ -43,8 +43,9 @@ node {
             def downloadSpec = """{
             "files": [
             {
-                "pattern": "maven-repo/capstoneproject-0.0.1-SNAPSHOT.war",
-                "target": "./capstoneproject.war"
+                "pattern": " maven-repo/warapp-0.0.1.war",
+                 
+                "target": "./warapp-0.0.1.war"
             }
             ]
             }"""
